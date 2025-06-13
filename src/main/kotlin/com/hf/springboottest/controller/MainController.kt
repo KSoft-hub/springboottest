@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 class MainController {
     @GetMapping("/")
     fun showUser(model: Model): String {
-        println("hoge")
+        println("huga")
         return "index"
     }
 }
