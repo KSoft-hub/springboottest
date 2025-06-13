@@ -42,7 +42,7 @@ class TestTableRestController(val testTablesService: TestTableService) {
         @field:NotNull
         val endedAt: Instant
     )
-/*
+
     @PostMapping
     fun add(
         @Valid @RequestBody payload: TestTableRequest
@@ -57,7 +57,7 @@ class TestTableRestController(val testTablesService: TestTableService) {
     ) = Callable {
         testTablesService.updateTestTable(id, payload)
     }
-*/
+
     @DeleteMapping("{id}")
     fun delete(
         @PathVariable("id") id: Long
